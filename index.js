@@ -1,9 +1,11 @@
 import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
 
+import { typeDefs } from "./schema.js"
 //server step
 const  server = new ApolloServer({
-    //typeDefs
+    //typeDefs -- definitions of types of data
+    typeDefs,
     //resolvers
 })
 
